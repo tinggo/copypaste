@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ImportGroup Label="PropertySheets" />
+	
+    <PropertyGroup Label="UserMacros">
+        <RootDir>$(ProjectDir)</RootDir>
+    </PropertyGroup>
+	
+    <PropertyGroup Label="UserMacros" Condition="'$(Platform)'=='x64'">
+        <PlatformType>pc</PlatformType>
+    </PropertyGroup>
+	
+	<PropertyGroup Label="UserMacros" Condition="'$(Platform)'=='ORBIS'">
+        <PlatformType>ps4</PlatformType>
+    </PropertyGroup>
+	
+	<PropertyGroup Label="UserMacros" Condition="'$(Platform)'=='Durango'">
+        <PlatformType>xb1</PlatformType>
+    </PropertyGroup>
+	
+	<PropertyGroup>
+		<OutDir>$(RootDir)build\$(PlatformType)\</OutDir>
+		<IntDir>$(RootDir)build\code_output\$(Platform)\$(Configuration)\</IntDir>
+	</PropertyGroup>
+	
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(RootDir)library\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions Condition="'$(Platform)'=='x64'">IS_PC</PreprocessorDefinitions>
+			<PreprocessorDefinitions Condition="'$(Platform)'=='ORBIS'">IS_PS4</PreprocessorDefinitions>
+			<PreprocessorDefinitions Condition="'$(Platform)'=='Durango'">IS_XB1</PreprocessorDefinitions>
+		</ClCompile>
+		
+		<Link>
+			<AdditionalLibraryDirectories>$(RootDir)library\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+		
+		<PostBuildEvent>
+			<Command>if not exist $(RootDir)build\$(PlatformType)\data\ mklink /J $(RootDir)build\$(PlatformType)\data\ $(RootDir)data\</Command>
+			<Message>Junction data folder</Message>
+		</PostBuildEvent>		
+	</ItemDefinitionGroup>
+	
+	<ItemGroup>
+		<BuildMacro Include="RootDir">
+			<Value>$(RootDir)</Value>
+		</BuildMacro>
+	</ItemGroup>
+</Project>
