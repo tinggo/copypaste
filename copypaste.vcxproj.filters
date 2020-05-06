@@ -4,6 +4,9 @@
     <Filter Include="code">
       <UniqueIdentifier>{e140803c-bd2b-4528-a2f2-cf570833cd50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="code\cjson">
+      <UniqueIdentifier>{500c7e7f-eec1-47af-bf89-35541aca31ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\main.cpp">
@@ -18,6 +21,12 @@
     <ClCompile Include="code\rule.cpp">
       <Filter>code</Filter>
     </ClCompile>
+    <ClCompile Include="code\cjson\cJSON.c">
+      <Filter>code\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="code\cjson\cJSON_Utils.c">
+      <Filter>code\cjson</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\copypaste.h">
@@ -28,6 +37,12 @@
     </ClInclude>
     <ClInclude Include="code\rule.h">
       <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="code\cjson\cJSON.h">
+      <Filter>code\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="code\cjson\cJSON_Utils.h">
+      <Filter>code\cjson</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

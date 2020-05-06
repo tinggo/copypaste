@@ -1,0 +1,22 @@
+{
+   "rule":{
+      "name":"telescope debug",
+      "id":0,
+      "copies":[
+         {
+            "src":"",
+            "des":"",
+            "exist_prompt":false,
+            "is_folder":false,
+            "recurisive":true
+         },
+         {
+            "src":"",
+            "des":"",
+            "exist_prompt":false,
+            "is_folder":false,
+            "recurisive":true
+         }
+      ]
+   }
+}

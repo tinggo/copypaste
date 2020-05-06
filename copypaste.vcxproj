@@ -12,12 +12,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\action.cpp" />
+    <ClCompile Include="code\cjson\cJSON.c" />
+    <ClCompile Include="code\cjson\cJSON_Utils.c" />
     <ClCompile Include="code\copypaste.cpp" />
     <ClCompile Include="code\main.cpp" />
     <ClCompile Include="code\rule.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\action.h" />
+    <ClInclude Include="code\cjson\cJSON.h" />
+    <ClInclude Include="code\cjson\cJSON_Utils.h" />
     <ClInclude Include="code\copypaste.h" />
     <ClInclude Include="code\rule.h" />
   </ItemGroup>
