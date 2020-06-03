@@ -11,19 +11,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="code\action.cpp" />
     <ClCompile Include="code\cjson\cJSON.c" />
     <ClCompile Include="code\cjson\cJSON_Utils.c" />
-    <ClCompile Include="code\copypaste.cpp" />
+    <ClCompile Include="code\core\action.cpp" />
+    <ClCompile Include="code\core\copypaste.cpp" />
+    <ClCompile Include="code\core\manager.cpp" />
+    <ClCompile Include="code\core\rule.cpp" />
+    <ClCompile Include="code\filesystem\fileaccessor.cpp" />
     <ClCompile Include="code\main.cpp" />
-    <ClCompile Include="code\rule.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="code\action.h" />
     <ClInclude Include="code\cjson\cJSON.h" />
     <ClInclude Include="code\cjson\cJSON_Utils.h" />
-    <ClInclude Include="code\copypaste.h" />
-    <ClInclude Include="code\rule.h" />
+    <ClInclude Include="code\core\action.h" />
+    <ClInclude Include="code\core\copypaste.h" />
+    <ClInclude Include="code\core\manager.h" />
+    <ClInclude Include="code\core\rule.h" />
+    <ClInclude Include="code\filesystem\fileaccessor.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

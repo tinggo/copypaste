@@ -7,42 +7,63 @@
     <Filter Include="code\cjson">
       <UniqueIdentifier>{500c7e7f-eec1-47af-bf89-35541aca31ae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="code\filesystem">
+      <UniqueIdentifier>{74419d2d-3d87-4d7a-86ee-71ce2caa7118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\core">
+      <UniqueIdentifier>{16cc13e0-855e-4478-8f13-b963d38d9b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\progressbar">
+      <UniqueIdentifier>{8c96ba28-0940-4f47-bff1-e86c6a495a5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="code\main.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
-    <ClCompile Include="code\copypaste.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
-    <ClCompile Include="code\action.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
-    <ClCompile Include="code\rule.cpp">
-      <Filter>code</Filter>
-    </ClCompile>
     <ClCompile Include="code\cjson\cJSON.c">
       <Filter>code\cjson</Filter>
     </ClCompile>
     <ClCompile Include="code\cjson\cJSON_Utils.c">
       <Filter>code\cjson</Filter>
     </ClCompile>
+    <ClCompile Include="code\core\action.cpp">
+      <Filter>code\core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\core\copypaste.cpp">
+      <Filter>code\core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\core\rule.cpp">
+      <Filter>code\core</Filter>
+    </ClCompile>
+    <ClCompile Include="code\filesystem\fileaccessor.cpp">
+      <Filter>code\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="code\main.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="code\core\manager.cpp">
+      <Filter>code\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="code\copypaste.h">
-      <Filter>code</Filter>
-    </ClInclude>
-    <ClInclude Include="code\action.h">
-      <Filter>code</Filter>
-    </ClInclude>
-    <ClInclude Include="code\rule.h">
-      <Filter>code</Filter>
-    </ClInclude>
     <ClInclude Include="code\cjson\cJSON.h">
       <Filter>code\cjson</Filter>
     </ClInclude>
     <ClInclude Include="code\cjson\cJSON_Utils.h">
       <Filter>code\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="code\core\action.h">
+      <Filter>code\core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\core\copypaste.h">
+      <Filter>code\core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\core\rule.h">
+      <Filter>code\core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\filesystem\fileaccessor.h">
+      <Filter>code\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="code\core\manager.h">
+      <Filter>code\core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
