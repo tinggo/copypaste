@@ -25,7 +25,7 @@
 	
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(RootDir)library\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(RootDir)library\include\;$(RootDir)code\%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions Condition="'$(Platform)'=='x64'">IS_PC</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Platform)'=='ORBIS'">IS_PS4</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Platform)'=='Durango'">IS_XB1</PreprocessorDefinitions>

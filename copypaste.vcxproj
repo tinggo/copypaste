@@ -19,6 +19,7 @@
     <ClCompile Include="code\core\rule.cpp" />
     <ClCompile Include="code\filesystem\fileaccessor.cpp" />
     <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\utility\commandline\commandline.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\cjson\cJSON.h" />
@@ -28,6 +29,8 @@
     <ClInclude Include="code\core\manager.h" />
     <ClInclude Include="code\core\rule.h" />
     <ClInclude Include="code\filesystem\fileaccessor.h" />
+    <ClInclude Include="code\utility\commandline\commandline.h" />
+    <ClInclude Include="code\ytype.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

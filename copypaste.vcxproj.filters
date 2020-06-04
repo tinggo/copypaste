@@ -13,8 +13,14 @@
     <Filter Include="code\core">
       <UniqueIdentifier>{16cc13e0-855e-4478-8f13-b963d38d9b0f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="code\progressbar">
+    <Filter Include="code\utility">
+      <UniqueIdentifier>{f77d9a3c-74c3-48dd-a400-83a6ff515400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\utility\progressbar">
       <UniqueIdentifier>{8c96ba28-0940-4f47-bff1-e86c6a495a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\utility\commandline">
+      <UniqueIdentifier>{3eafb9c1-b3ca-44ca-8075-bcc651747256}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +48,9 @@
     <ClCompile Include="code\core\manager.cpp">
       <Filter>code\core</Filter>
     </ClCompile>
+    <ClCompile Include="code\utility\commandline\commandline.cpp">
+      <Filter>code\utility\commandline</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\cjson\cJSON.h">
@@ -64,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="code\core\manager.h">
       <Filter>code\core</Filter>
+    </ClInclude>
+    <ClInclude Include="code\utility\commandline\commandline.h">
+      <Filter>code\utility\commandline</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ytype.h">
+      <Filter>code</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
